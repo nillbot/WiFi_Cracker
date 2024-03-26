@@ -12,7 +12,8 @@ echo -e "\e[33m                                   - Developed By nillbot \e[0m"
 
 # Check if the script is run as root
 if [ "$(id -u)" == "0" ]; then
-    echo "This script can't be run as root. Please do ./$0" 1>&2
+    echo ""
+    echo "This script can't be run as root. Exiting..." 1>&2
     exit 1
 fi
 
