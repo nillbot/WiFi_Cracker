@@ -34,7 +34,7 @@ connect_to_wifi() {
     # Check connection status
     if [ $? -eq 0 ]; then
         echo ""
-        echo -e "\e[33mPassword Found: den@1234\e[0m"
+        echo -e "\e[33mSuccessfully connected to $ssid with password $password\e[0m"
         exit 0
     else
         return 1
